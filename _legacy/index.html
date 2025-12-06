@@ -1,0 +1,794 @@
+o<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Brooklyn Gilbert - Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+    body {
+      background: linear-gradient(135deg, #f3e8ff 0%, #e0f7fa 100%);
+    }
+    .dark body {
+      background: linear-gradient(135deg, #2c1a4d 0%, #1a3a4a 100%);
+    }
+  </style>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#8B5CF6", // A vibrant purple
+            "background-light": "#FFFFFF",
+            "background-dark": "#111827", // A dark gray for dark mode body
+            "text-light": "#1F2937", // Dark gray for light mode text
+            "text-dark": "#E5E7EB", // Light gray for dark mode text
+            "subtle-light": "#F3E8FF", // Very light purple for stat cards
+            "subtle-dark": "#1F2937", // Dark gray for dark mode stat cards
+          },
+          fontFamily: {
+            display: ["Poppins", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "12px",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+<div class="min-h-screen relative overflow-hidden">
+<div class="container mx-auto px-6 md:px-12 py-8 relative z-10">
+<header class="flex justify-between items-center">
+<div class="flex items-center space-x-3">
+<div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white text-xl font-bold">
+            B
+          </div>
+<span class="text-xl font-bold text-text-light dark:text-text-dark">Brooklyn</span>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">About</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Process</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Blog</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Services</a>
+<a class="bg-primary text-white px-5 py-2 rounded-lg font-medium hover:opacity-90 transition-opacity" href="#">Contact</a>
+</nav>
+<button class="md:hidden text-gray-700 dark:text-gray-300">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</header>
+<main class="mt-20 md:mt-28 grid md:grid-cols-2 gap-16 items-center">
+<div class="flex flex-col gap-8">
+<div class="space-y-4">
+<h1 class="text-5xl md:text-6xl font-bold leading-tight text-text-light dark:text-text-dark">Hello, I'm <br/> Brooklyn Gilbert</h1>
+<p class="text-lg text-gray-600 dark:text-gray-400">
+              I'm a Freelance <span class="font-semibold text-primary">UI/UX Designer</span> and <span class="font-semibold text-primary">Developer</span> based in London, England. I strive to build immersive and beautiful web applications through carefully crafted code and user-centric design.
+            </p>
+</div>
+<div class="mt-4">
+<a class="bg-primary text-white px-8 py-3 rounded-lg font-semibold text-lg hover:opacity-90 transition-opacity inline-block" href="#">Say Hello!</a>
+</div>
+<div class="mt-12 grid grid-cols-3 gap-4">
+<div class="bg-subtle-light/60 dark:bg-subtle-dark p-4 rounded-lg text-center backdrop-blur-sm">
+<p class="text-2xl font-bold text-text-light dark:text-text-dark">15 Y.</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Experience</p>
+</div>
+<div class="bg-subtle-light/60 dark:bg-subtle-dark p-4 rounded-lg text-center backdrop-blur-sm">
+<p class="text-2xl font-bold text-text-light dark:text-text-dark">250+</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Project Completed</p>
+</div>
+<div class="bg-subtle-light/60 dark:bg-subtle-dark p-4 rounded-lg text-center backdrop-blur-sm">
+<p class="text-2xl font-bold text-text-light dark:text-text-dark">58</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Happy Client</p>
+</div>
+</div>
+</div>
+<div class="flex justify-center md:justify-end">
+<div class="bg-white/50 dark:bg-gray-800/50 p-4 rounded-3xl shadow-2xl backdrop-blur-lg">
+<img alt="Portrait of Brooklyn Gilbert smiling, wearing a grey blazer over a white t-shirt." class="rounded-2xl max-w-sm w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU6y0Be_sXPgA93JUtemp4wfBHmr0HDZj43r-jjBiOMs-tzrYCPi5H2PWzS8T-05jZ95mBwO50HqJiFkQlNi0Dj-DgX6mooXCDCcWiSI41yN1fUL9OSgnJrfP1djtIhNP1GtleFiQdz4MGO9NTY2DK5c7FC1OLWV2UNSTpIFnVuvyMA-GHA4mm1XqlPo0IOt8pWp0Mfzi_XBH-cJaKkoTB1Gnjy2sdHl7ImqADPfmK9b9wPfv3aikRfydPnS84-UK21A-m0jaqGrvl"/>
+</div>
+</div>
+</main>
+</div>
+</div>
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Professional UX Designer Hero Section</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#8B5CF6", // A vibrant purple
+              "background-light": "#F9FAFB", // A very light gray
+              "background-dark": "#1F2937",  // A cool dark gray
+              "card-light": "#FFFFFF",
+              "card-dark": "#374151",
+              "text-light": "#4B5563",
+              "text-dark": "#D1D5DB",
+              "heading-light": "#111827",
+              "heading-dark": "#F9FAFB"
+            },
+            fontFamily: {
+              display: ["Poppins", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "1rem", // Using 1rem for a softer look
+            },
+          },
+        },
+      };
+    </script>
+<style>body {
+            background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+        }
+        .dark body {
+            background-image: linear-gradient(120deg, #2c3e50 0%, #4ca1af 100%);
+        }.fa-facebook-f, .fa-dribbble, .fa-instagram, .fa-linkedin-in, .fa-behance {
+          font-style: normal;
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="flex items-center justify-center min-h-screen p-4 sm:p-6 lg:p-8">
+<div class="w-full max-w-5xl bg-card-light dark:bg-card-dark rounded-lg shadow-2xl p-8 md:p-12">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col items-center lg:items-start">
+<div class="relative w-full max-w-sm">
+<img alt="Portrait of a smiling professional UX designer with arms crossed" class="rounded-lg w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHWA8Vq2ngF7Aml7og-YKuJHd3jF__iILOp7I51oze3jeH06ffBU_eLLCxvsajBsYvck2Opibr7KVrW9ch6C9NUhjCxdLyKj7pDMf-VvfNxfraDwfIj6ZJ7acUd7XYOFdIXSj6rH9mC1_iDBYwUqL1CYBH90Yh34sl2YXqRIiIapP2g-hu3WkBdpWqzkviw69S8-3K3SdbNsx_UTYmsKEWG6LnGwGz5CM1DsWYgwbUNo2UI8Q1c3aTCbhAwuYLk7egEvOnrBrBiaaC"/>
+<div class="absolute -bottom-6 left-1/2 -translate-x-1/2 w-[80%] bg-card-light dark:bg-card-dark rounded-lg shadow-lg p-3">
+<div class="flex justify-around items-center">
+<a class="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2Zm0 16c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6Zm-2-6a2 2 0 1 1 4 0 2 2 0 0 1-4 0Z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 0 1 1.772 1.153 4.902 4.902 0 0 1 1.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 0 1-1.153 1.772 4.902 4.902 0 0 1-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 0 1-1.772-1.153 4.902 4.902 0 0 1-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 0 1 1.153-1.772A4.902 4.902 0 0 1 6.08 2.525c.636-.247 1.363-.416 2.427-.465C9.53 2.013 9.884 2 12.315 2Z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-white bg-primary rounded p-1.5 transition-colors" href="#">
+<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+<a class="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition-colors font-bold text-lg" href="#">
+                                  Bē
+                                </a>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col text-center lg:text-left pt-8 lg:pt-0">
+<h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-heading-light dark:text-heading-dark leading-tight">I am Professional User Experience Designer</h1>
+<p class="mt-6 text-base text-text-light dark:text-text-dark leading-relaxed">
+                        I design and develop services for customers specializing creating stylish, modern websites, web services and online stores. My passion is to design digital user experiences.
+                    </p>
+<p class="mt-4 text-base text-text-light dark:text-text-dark leading-relaxed">
+                        I design and develop services for customers specializing creating stylish, modern websites, web services.
+                    </p>
+<div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+<button class="bg-primary text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105">
+                            My Project
+                        </button>
+<button class="flex items-center justify-center gap-2 bg-card-light dark:bg-card-dark text-primary font-semibold py-3 px-6 rounded-lg border-2 border-primary hover:bg-primary/10 dark:hover:bg-primary/20 transition-all duration-300 transform hover:scale-105">
+<span class="material-icons-outlined">download</span>
+                            Download CV
+                        </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Work Process Overview</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#9333EA", // Vibrant Purple
+              "primary-light": "#F3E8FF", // Very light purple for icon backgrounds
+              "background-light": "#F3F4F6", // Light gray background
+              "background-dark": "#111827", // Dark gray/black background
+              "card-light": "#FFFFFF",
+              "card-dark": "#1F2937",
+              "text-main-light": "#1F2937",
+              "text-main-dark": "#F9FAFB",
+              "text-muted-light": "#6B7280",
+              "text-muted-dark": "#9CA3AF",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+              body: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.75rem", // 12px
+              xl: "1rem", // 16px
+            },
+            boxShadow: {
+                'soft': '0 10px 40px -10px rgba(0,0,0,0.08)',
+            }
+          },
+        },
+      };
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 transition-colors duration-300">
+<div class="max-w-7xl w-full mx-auto">
+<div class="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
+<div class="w-full lg:w-1/3 lg:sticky lg:top-12 space-y-6 pt-4">
+<h2 class="text-3xl sm:text-4xl font-bold text-text-main-light dark:text-text-main-dark tracking-tight">
+                    Work Process
+                </h2>
+<div class="space-y-4">
+<p class="text-text-muted-light dark:text-text-muted-dark leading-relaxed text-base sm:text-lg">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum. Suspendis imperdiet.
+                    </p>
+<p class="text-text-muted-light dark:text-text-muted-dark leading-relaxed text-base sm:text-lg">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non.
+                    </p>
+</div>
+</div>
+<div class="w-full lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="bg-card-light dark:bg-card-dark rounded-xl p-8 shadow-soft hover:shadow-lg transition-shadow duration-300 border border-transparent dark:border-gray-700">
+<div class="w-14 h-14 rounded-xl bg-primary flex items-center justify-center mb-6 shadow-md transform transition-transform hover:scale-110">
+<span class="material-icons-round text-white text-3xl">assignment</span>
+</div>
+<h3 class="text-xl font-bold text-text-main-light dark:text-text-main-dark mb-3">
+                        1. Research
+                    </h3>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu.
+                    </p>
+</div>
+<div class="bg-card-light dark:bg-card-dark rounded-xl p-8 shadow-soft hover:shadow-lg transition-shadow duration-300 border border-transparent dark:border-gray-700 sm:translate-y-12">
+<div class="w-14 h-14 rounded-xl bg-primary-light dark:bg-opacity-10 flex items-center justify-center mb-6">
+<span class="material-icons-round text-primary text-3xl">trending_up</span>
+</div>
+<h3 class="text-xl font-bold text-text-main-light dark:text-text-main-dark mb-3">
+                        2. Analyze
+                    </h3>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu.
+                    </p>
+</div>
+<div class="bg-card-light dark:bg-card-dark rounded-xl p-8 shadow-soft hover:shadow-lg transition-shadow duration-300 border border-transparent dark:border-gray-700">
+<div class="w-14 h-14 rounded-xl bg-primary-light dark:bg-opacity-10 flex items-center justify-center mb-6">
+<span class="material-icons-round text-primary text-3xl">edit</span>
+</div>
+<h3 class="text-xl font-bold text-text-main-light dark:text-text-main-dark mb-3">
+                        2. Design
+</h3>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu.
+                    </p>
+</div>
+<div class="bg-card-light dark:bg-card-dark rounded-xl p-8 shadow-soft hover:shadow-lg transition-shadow duration-300 border border-transparent dark:border-gray-700 sm:translate-y-12">
+<div class="w-14 h-14 rounded-xl bg-primary-light dark:bg-opacity-10 flex items-center justify-center mb-6">
+<span class="material-icons-round text-primary text-3xl">laptop_mac</span>
+</div>
+<h3 class="text-xl font-bold text-text-main-light dark:text-text-main-dark mb-3">
+                        4. Launch
+                    </h3>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu.
+                    </p>
+</div>
+</div>
+</div>
+</div>
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio Showcase</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#a855f7", // Purple accent
+                        background: "#f8fafc", // Very light slate
+                        card: "#ffffff",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-slate-800 min-h-screen flex flex-col antialiased">
+<main class="flex-grow w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<header class="text-center mb-16">
+<h1 class="text-4xl md:text-5xl font-bold mb-4 text-slate-900">Portfolio</h1>
+<p class="text-slate-500 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.
+            </p>
+</header>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<article class="group bg-card rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden border border-slate-100">
+<div class="relative overflow-hidden h-56 w-full">
+<img alt="Abstract pink and red paint texture" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCWrV1uVOFSifn6wwS7FSAhsdTTEao9WIoFFKTLhoGb3HuiRr-iYJ3tt4Tr5961s5en4qTaVlbSNJ4yqFfAf6hU8M6yWwbJiXSuvUVw9mxSJjPTlwlUaL5Cic4xU_EwlDCJSC-LoRrq29LHI2b7V43tUp46f_VUEnF97fJcH8kEAawnKoFHhsRVX_9NK6fG2Bs_nwFyQLZMX19TMCUvdfCyuiG29D5xBu3k2_xdK32vxdWEXQZAI6auz6cKzyitN-82wMmRUMC0A"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="mb-2">
+<span class="text-xs font-bold text-slate-400 uppercase tracking-widest">UI-UX Design</span>
+</div>
+<h3 class="text-lg font-bold text-slate-900 mb-3">Product Admin Dashboard</h3>
+<p class="text-sm text-slate-500 mb-6 flex-grow leading-relaxed">
+                        Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus.
+                    </p>
+<div class="mt-auto">
+<a class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-primary border border-primary rounded-lg hover:bg-primary hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary" href="#">
+                            Case Study
+                            <span class="material-symbols-outlined text-base ml-2">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<article class="group bg-card rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden border border-slate-100">
+<div class="relative overflow-hidden h-56 w-full">
+<img alt="Dark abstract geometric architecture" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIhzMaRWm5rmG916QLk_m9Mgn00ZRMQIOlPKMRqgwRVG6PkM2nbYGkWA6TNXLW0pikQmWbKEu3s05EBTYN8IwoHt-FEBZMWdvnafuoBhn198qYJ28e0MNN3LPJCqa9yhA-nR8TtjA1-Mf6jsZ_-WFGTNW5010Kt4WYNdg-FDvsuco5b3SNrFAvbMrW6JgtErV7lnDZ7YQXkU3j58dSV90n2rrI_Wl146wMHetkedsnuiO9tTQ5xIlMmB0EPD5EzVTncK8lWKTZjQ"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="mb-2">
+<span class="text-xs font-bold text-slate-400 uppercase tracking-widest">UI-UX Design</span>
+</div>
+<h3 class="text-lg font-bold text-slate-900 mb-3">Product Admin Dashboard</h3>
+<p class="text-sm text-slate-500 mb-6 flex-grow leading-relaxed">
+                        Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus.
+                    </p>
+<div class="mt-auto">
+<a class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-primary border border-primary rounded-lg hover:bg-primary hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary" href="#">
+                            Case Study
+                            <span class="material-symbols-outlined text-base ml-2">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<article class="group bg-card rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden border border-slate-100">
+<div class="relative overflow-hidden h-56 w-full">
+<img alt="Laptop showing code on screen" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGBmcySTBHsO_L0_NAoWThF2w-syOk102IzVExc1h-xXtv0uABkAJ5KXMIr_bRak3NAinDxTua531cfIxA_JutTNMrm7-XIrRcAqwXbtzpU3pbs1jdWoBLEpB0gQ4XClMwBDZMy9C9vzrhwFATcOg8H8iJ-skJW1EyOrd_AsW_fkuy5wbNfDOslu_5T6bVzAPj0TTYPxB2ZxQ_RrOl7nVl2hQy44s7GF88uBniinzgBADUJ3qMywhj-gaelIGUb9HpJekZRMdXLA"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="mb-2">
+<span class="text-xs font-bold text-slate-400 uppercase tracking-widest">UI-UX Design</span>
+</div>
+<h3 class="text-lg font-bold text-slate-900 mb-3">Product Admin Dashboard</h3>
+<p class="text-sm text-slate-500 mb-6 flex-grow leading-relaxed">
+                        Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus.
+                    </p>
+<div class="mt-auto">
+<a class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-primary border border-primary rounded-lg hover:bg-primary hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary" href="#">
+                            Case Study
+                            <span class="material-symbols-outlined text-base ml-2">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<article class="group bg-card rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden border border-slate-100">
+<div class="relative overflow-hidden h-56 w-full">
+<img alt="Modern corporate meeting room" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIgD6yscF-DPbgnNZuRue_QknM1ont8bX8vzcKZO732UPAK4Fgy7UfelhBKk-mCfc9ifPtXj7EWvxwGxKHp0b1ZQsntMowT3jk8U-t-DT20dfDthgiBhx8vY3WbXfXuQk-J2ZOS6eA314fVOoaXFZrR_zDxxWjJp918nL6JSN9NaKnPoE15kAAYKbOTOdogDZUF0-NusNCzY_Bigc3i8c2jUJbKnIKRGcTXmXMhJavTZ6WfpUqy1Skxhp466leTSgkRXREiyPxKg"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="mb-2">
+<span class="text-xs font-bold text-slate-400 uppercase tracking-widest">UI-UX Design</span>
+</div>
+<h3 class="text-lg font-bold text-slate-900 mb-3">Product Admin Dashboard</h3>
+<p class="text-sm text-slate-500 mb-6 flex-grow leading-relaxed">
+                        Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus.
+                    </p>
+<div class="mt-auto">
+<a class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-primary border border-primary rounded-lg hover:bg-primary hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary" href="#">
+                            Case Study
+                            <span class="material-symbols-outlined text-base ml-2">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<article class="group bg-card rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden border border-slate-100">
+<div class="relative overflow-hidden h-56 w-full bg-yellow-50">
+<img alt="Plush avocado toy on yellow background" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkYUHpCvnq36cxbxRb0t4GiNlCdiHQYW1W437-MRuWUEnvGe6LNVPTI0ZHMVmgddS8Osu1C19kyI0dGbFvHJBJGthb7irSajxLj4Dy8nODtRM88enZggwUfndRcFGqV5QRLma1XpVMOHccCNvcugMx6cTjjwfHXPg4CBozcH-KFrozDV6BalMkdR0VbGdckDgYnsnki9OGPgXUCTcGmWOhR7tMRNekoMoeG2UgRBq7ZOXmX6AJVxwN2Go2nLQpiaRTuRRiZW_yuw"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="mb-2">
+<span class="text-xs font-bold text-slate-400 uppercase tracking-widest">UI-UX Design</span>
+</div>
+<h3 class="text-lg font-bold text-slate-900 mb-3">Product Admin Dashboard</h3>
+<p class="text-sm text-slate-500 mb-6 flex-grow leading-relaxed">
+                        Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus.
+                    </p>
+<div class="mt-auto">
+<a class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-primary border border-primary rounded-lg hover:bg-primary hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary" href="#">
+                            Case Study
+                            <span class="material-symbols-outlined text-base ml-2">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<article class="group bg-card rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden border border-slate-100">
+<div class="relative overflow-hidden h-56 w-full">
+<img alt="Macro shot of lavender flowers" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq93-IVMxjUxsc_s6O1i9x1HnqxZKT9cNdaQCe5L7sFU9iktrXdCfHLcB2MfUM9Ao-536MVnzAsTqsaGmmWET_Eh6tH8nGs7Pt9_WzZSpxb0U4UHn3t0j3jhPSDFP86vLbWdHtKahFK5LZKQq5Eqtp1K8zB6E3fCFNTMdNrwSF0M8irYwO5OLPOKxa0QewD-kN6v703fSEhVVWh0IqCysrTl75YkTr6DlB--tL-g3zdw6_yz5b8K9Df1YkDf21cc6gnCmc0_83eA"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="mb-2">
+<span class="text-xs font-bold text-slate-400 uppercase tracking-widest">UI-UX Design</span>
+</div>
+<h3 class="text-lg font-bold text-slate-900 mb-3">Product Admin Dashboard</h3>
+<p class="text-sm text-slate-500 mb-6 flex-grow leading-relaxed">
+                        Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus.
+                    </p>
+<div class="mt-auto">
+<a class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-primary border border-primary rounded-lg hover:bg-primary hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary" href="#">
+                            Case Study
+                            <span class="material-symbols-outlined text-base ml-2">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+<div class="mt-16 text-center">
+<button class="bg-primary hover:bg-purple-600 text-white font-bold py-3 px-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-purple-300">
+                More Project
+            </button>
+</div>
+</main>
+<footer class="py-8 text-center text-slate-400 text-sm">
+<p>© 2023 Portfolio Showcase. All rights reserved.</p>
+</footer>
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>What I Do Section</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#a855f7", // Purple color from screenshot
+                        "background-light": "#f3f4f6", // Light gray background
+                        "background-dark": "#111827", // Dark gray background
+                        "card-light": "#ffffff",
+                        "card-dark": "#1f2937",
+                        "text-light": "#374151",
+                        "text-dark": "#d1d5db",
+                        "muted-light": "#6b7280",
+                        "muted-dark": "#9ca3af",
+                    },
+                    fontFamily: {
+                        display: ["Poppins", "sans-serif"],
+                        body: ["Poppins", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                    }
+                },
+            },
+        };
+    </script>
+<style>.card-accent {
+            position: relative;
+            overflow: hidden;
+        }
+        .card-accent::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: #a855f7;
+            border-top-left-radius: 0.5rem;
+            border-bottom-left-radius: 0.5rem;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased transition-colors duration-300 min-h-screen flex items-center justify-center p-6">
+<div class="max-w-6xl w-full mx-auto">
+<div class="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
+<div class="w-full lg:w-5/12 pt-4">
+<h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 tracking-tight">
+                    What I do?
+                </h1>
+<div class="space-y-6 text-muted-light dark:text-muted-dark leading-relaxed text-sm md:text-base">
+<p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum. Suspendis imperdiet.
+                    </p>
+<p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non.
+                    </p>
+</div>
+<div class="mt-8">
+<button class="bg-primary hover:bg-purple-600 text-white font-semibold py-3 px-8 rounded shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5 text-sm uppercase tracking-wide">
+                        Say Hello!
+                    </button>
+</div>
+</div>
+<div class="w-full lg:w-7/12 flex flex-col gap-6">
+<div class="card-accent bg-card-light dark:bg-card-dark p-6 md:p-8 rounded shadow-soft hover:shadow-lg transition-shadow duration-300">
+<h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">User Experience (UX)</h3>
+<p class="text-muted-light dark:text-muted-dark text-sm leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum.
+                    </p>
+</div>
+<div class="group bg-card-light dark:bg-card-dark p-6 md:p-8 rounded shadow-soft hover:shadow-lg transition-all duration-300 border-l-4 border-transparent hover:border-primary cursor-default">
+<h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-primary transition-colors">User Interface (UI)</h3>
+<p class="text-muted-light dark:text-muted-dark text-sm leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum.
+                    </p>
+</div>
+<div class="group bg-card-light dark:bg-card-dark p-6 md:p-8 rounded shadow-soft hover:shadow-lg transition-all duration-300 border-l-4 border-transparent hover:border-primary cursor-default">
+<h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-primary transition-colors">Web Development</h3>
+<p class="text-muted-light dark:text-muted-dark text-sm leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum.
+                    </p>
+</div>
+</div>
+</div>
+</div>
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Testimonial and Contact</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#A855F7", // Purple-500
+                        "primary-dark": "#9333EA", // Purple-600
+                        "background-light": "#FFFFFF", 
+                        "background-dark": "#0F172A", // Slate-900
+                        "footer-bg": "#262E3E", // Dark Slate Blue
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+<style>::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; 
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-body text-gray-600 dark:text-gray-300 antialiased selection:bg-primary selection:text-white">
+<section class="pt-20 pb-24 md:pt-28 md:pb-32 px-4 bg-background-light dark:bg-background-dark transition-colors duration-300">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 tracking-tight">Testimonial</h2>
+<p class="text-sm md:text-base text-gray-400 dark:text-gray-500 mb-12 max-w-lg mx-auto leading-relaxed">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration.
+            </p>
+<blockquote class="text-lg md:text-xl font-medium text-gray-600 dark:text-gray-300 leading-8 md:leading-9 mb-10 px-4">
+                "Nulla efficitur nisl sit amet velit malesuada dapibus. Duis mollis felis turpis, nec semper odio
+                convallis at. Curabitur imperdiet semper arcu, a finibus arcu suscipit in. Donec quis placerat nibh.
+                Maecenas est purus, eleifend ac cursus sed, tincidunt ut sapien.
+                Morbi ornare elit at libero suscipit porta."
+            </blockquote>
+<div class="mb-10">
+<h4 class="text-gray-900 dark:text-white font-bold text-lg">Esther Howard</h4>
+<p class="text-xs md:text-sm text-gray-500 dark:text-gray-400 mt-1">Managing Director, ABC company</p>
+</div>
+<div class="flex justify-center items-center space-x-3">
+<button aria-label="Go to slide 1" class="w-8 h-2 bg-[#262E3E] dark:bg-white rounded-full transition-all duration-300"></button>
+<button aria-label="Go to slide 2" class="w-2 h-2 bg-gray-300 dark:bg-gray-700 rounded-full hover:bg-gray-400 transition-all duration-300"></button>
+<button aria-label="Go to slide 3" class="w-2 h-2 bg-gray-300 dark:bg-gray-700 rounded-full hover:bg-gray-400 transition-all duration-300"></button>
+</div>
+</div>
+</section>
+<div class="relative w-full">
+<div class="absolute bottom-0 w-full h-[65%] bg-footer-bg dark:bg-slate-900 -z-10"></div>
+<div class="container mx-auto px-4 lg:px-8 pb-20">
+<div class="bg-white dark:bg-slate-800 rounded-[2rem] shadow-2xl overflow-hidden flex flex-col lg:flex-row max-w-7xl mx-auto transform transition-all hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)]">
+<div class="w-full lg:w-5/12 p-8 md:p-12 lg:p-16 flex flex-col justify-center">
+<h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">Let's discuss your Project</h2>
+<p class="text-gray-500 dark:text-gray-400 mb-10 text-sm leading-relaxed">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.
+                    </p>
+<div class="space-y-8 mb-12">
+<div class="flex items-start space-x-5 group">
+<div class="flex-shrink-0 w-12 h-12 rounded-xl bg-purple-50 dark:bg-slate-700 flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-300">
+<span class="material-icons-outlined text-2xl">location_on</span>
+</div>
+<div class="pt-1">
+<p class="text-xs text-gray-400 dark:text-gray-500 uppercase font-bold tracking-wider mb-1">Address:</p>
+<p class="text-sm font-semibold text-gray-800 dark:text-gray-200">New Mexico 31134</p>
+</div>
+</div>
+<div class="flex items-start space-x-5 group">
+<div class="flex-shrink-0 w-12 h-12 rounded-xl bg-purple-50 dark:bg-slate-700 flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-300">
+<span class="material-icons-outlined text-2xl">email</span>
+</div>
+<div class="pt-1">
+<p class="text-xs text-gray-400 dark:text-gray-500 uppercase font-bold tracking-wider mb-1">My Email:</p>
+<p class="text-sm font-semibold text-gray-800 dark:text-gray-200">mymail@mail.com</p>
+</div>
+</div>
+<div class="flex items-start space-x-5 group">
+<div class="flex-shrink-0 w-12 h-12 rounded-xl bg-purple-50 dark:bg-slate-700 flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-300">
+<span class="material-icons-outlined text-2xl">call</span>
+</div>
+<div class="pt-1">
+<p class="text-xs text-gray-400 dark:text-gray-500 uppercase font-bold tracking-wider mb-1">Call Me Now:</p>
+<p class="text-sm font-semibold text-gray-800 dark:text-gray-200">00-1234 00000</p>
+</div>
+</div>
+</div>
+<div class="flex space-x-3 pt-4">
+<a class="w-10 h-10 flex items-center justify-center bg-primary text-white rounded-lg transition-all hover:bg-primary-dark hover:-translate-y-1 shadow-lg shadow-purple-200 dark:shadow-none" href="#">
+<i class="fab fa-facebook-f text-sm"></i>
+</a>
+<a class="w-10 h-10 flex items-center justify-center text-primary bg-purple-50 dark:bg-slate-700 rounded-lg transition-all hover:bg-primary hover:text-white hover:-translate-y-1" href="#">
+<i class="fas fa-globe text-sm"></i>
+</a>
+<a class="w-10 h-10 flex items-center justify-center text-primary bg-purple-50 dark:bg-slate-700 rounded-lg transition-all hover:bg-primary hover:text-white hover:-translate-y-1" href="#">
+<i class="fab fa-behance text-sm"></i>
+</a>
+<a class="w-10 h-10 flex items-center justify-center text-primary bg-purple-50 dark:bg-slate-700 rounded-lg transition-all hover:bg-primary hover:text-white hover:-translate-y-1" href="#">
+<i class="fab fa-instagram text-sm"></i>
+</a>
+<a class="w-10 h-10 flex items-center justify-center text-primary bg-purple-50 dark:bg-slate-700 rounded-lg transition-all hover:bg-primary hover:text-white hover:-translate-y-1" href="#">
+<i class="fab fa-linkedin-in text-sm"></i>
+</a>
+</div>
+</div>
+<div class="w-full lg:w-7/12 p-8 md:p-12 lg:p-16 relative">
+<div class="absolute left-0 top-16 bottom-16 w-px bg-gray-100 dark:bg-gray-700 hidden lg:block"></div>
+<p class="text-gray-500 dark:text-gray-400 mb-10 text-sm hidden lg:block leading-relaxed">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alte.
+                    </p>
+<form action="#" class="space-y-6">
+<div class="group">
+<label class="block text-xs font-semibold text-primary mb-2 transition-colors group-focus-within:text-primary" for="name">Name*</label>
+<input class="w-full border-0 border-b border-primary/40 dark:border-gray-600 bg-transparent py-2 text-gray-900 dark:text-white focus:border-primary focus:ring-0 placeholder-gray-300 transition-colors" id="name" type="text"/>
+</div>
+<div class="group">
+<label class="block text-xs font-semibold text-gray-400 dark:text-gray-500 mb-2 transition-colors group-focus-within:text-primary" for="email">Email*</label>
+<input class="w-full border-0 border-b border-gray-200 dark:border-gray-600 bg-transparent py-2 text-gray-900 dark:text-white focus:border-primary focus:ring-0 placeholder-gray-300 transition-colors" id="email" type="email"/>
+</div>
+<div class="group">
+<label class="block text-xs font-semibold text-gray-400 dark:text-gray-500 mb-2 transition-colors group-focus-within:text-primary" for="location">Location</label>
+<input class="w-full border-0 border-b border-gray-200 dark:border-gray-600 bg-transparent py-2 text-gray-900 dark:text-white focus:border-primary focus:ring-0 placeholder-gray-300 transition-colors" id="location" type="text"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="group">
+<label class="block text-xs font-semibold text-gray-400 dark:text-gray-500 mb-2 transition-colors group-focus-within:text-primary" for="budget">Budget*</label>
+<input class="w-full border-0 border-b border-gray-200 dark:border-gray-600 bg-transparent py-2 text-gray-900 dark:text-white focus:border-primary focus:ring-0 placeholder-gray-300 transition-colors" id="budget" type="text"/>
+</div>
+<div class="group">
+<label class="block text-xs font-semibold text-gray-400 dark:text-gray-500 mb-2 transition-colors group-focus-within:text-primary" for="subject">Subject*</label>
+<input class="w-full border-0 border-b border-gray-200 dark:border-gray-600 bg-transparent py-2 text-gray-900 dark:text-white focus:border-primary focus:ring-0 placeholder-gray-300 transition-colors" id="subject" type="text"/>
+</div>
+</div>
+<div class="group pt-2">
+<label class="block text-xs font-semibold text-gray-400 dark:text-gray-500 mb-2 transition-colors group-focus-within:text-primary" for="message">Message*</label>
+<textarea class="w-full border-0 border-b border-gray-200 dark:border-gray-600 bg-transparent py-2 text-gray-900 dark:text-white focus:border-primary focus:ring-0 placeholder-gray-300 resize-none transition-colors" id="message" rows="2"></textarea>
+</div>
+<div class="pt-8">
+<button class="inline-flex items-center px-8 py-3 bg-primary hover:bg-primary-dark text-white text-sm font-bold rounded shadow-lg shadow-purple-300 dark:shadow-none transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5" type="submit">
+                                Submit
+                                <span class="material-icons-outlined text-sm ml-2 transform rotate-[-45deg] relative top-[-1px]">send</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<footer class="bg-footer-bg dark:bg-slate-900 pt-0 pb-12">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm border-t border-gray-700 pt-10">
+<div class="flex items-center mb-6 md:mb-0 order-1 md:order-1">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl mr-3 shadow-lg">
+                        B
+                    </div>
+<span class="text-white font-bold text-xl tracking-wide">Brooklyn</span>
+</div>
+<div class="text-xs text-gray-500 order-3 md:order-3 mt-6 md:mt-0">
+                    Copyright © 2022 Picto.
+                </div>
+<nav class="order-2 md:order-2 w-full md:w-auto">
+<ul class="flex flex-wrap justify-center gap-x-6 gap-y-3">
+<li><a class="hover:text-white transition-colors duration-200 text-xs md:text-sm" href="#">Home</a></li>
+<li><a class="hover:text-white transition-colors duration-200 text-xs md:text-sm" href="#">About</a></li>
+<li><a class="hover:text-white transition-colors duration-200 text-xs md:text-sm" href="#">Services</a></li>
+<li><a class="hover:text-white transition-colors duration-200 text-xs md:text-sm" href="#">Process</a></li>
+<li><a class="hover:text-white transition-colors duration-200 text-xs md:text-sm" href="#">Portfolio</a></li>
+<li><a class="hover:text-white transition-colors duration-200 text-xs md:text-sm" href="#">Blog</a></li>
+<li><a class="hover:text-white transition-colors duration-200 text-xs md:text-sm" href="#">Contact</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</footer>
+</body></html>
