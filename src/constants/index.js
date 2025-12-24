@@ -19,7 +19,7 @@ export const SOCIAL_LINKS = [
   { href: 'https://www.facebook.com/shuvo999a', icon: FaFacebook, label: 'Facebook' },
 ];
 
-export const CV_LINK = "https://drive.google.com/file/d/1nhNYYoXGVPttKd11czkMpQaDaSGnyUPs/view?usp=drive_link";
+export const CV_LINK = "https://drive.google.com/file/d/1X7cCtPX3eiIQrr1ADd4OWcclwiyykcN0/view?usp=sharing";
 
 export const PROJECTS = [
   {

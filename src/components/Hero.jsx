@@ -69,7 +69,7 @@ const Hero = () => {
                     repeat: Infinity,
                     ease: "easeInOut" 
                   }}
-                  src={profileImage} 
+                  src='https://i.ibb.co.com/fG90B4Mp/Profile-Professional.png'
                   alt="Shuvo Mallik" 
                   className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
                   style={{ 

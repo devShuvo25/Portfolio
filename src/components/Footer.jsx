@@ -30,7 +30,7 @@ const Footer = () => {
         <div className="border-t border-dark-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-light-300">
            <p>&copy; {new Date().getFullYear()} Shuvo Mallik. All rights reserved.</p>
            <p className="flex items-center gap-1 mt-2 md:mt-0">
-             Made with <FaHeart className="text-red-500" /> by Antigravity
+             Made By <FaHeart className="text-red-500" /> Shuvo Mallik 
            </p>
         </div>
       </div>
